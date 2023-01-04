@@ -1,21 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export const LoginPage = () => {
+export const LoginForm = () => {
   return (
     <div className="w-full p-3 border rounded-sm flex flex-col  md:w-80 xl:w-80">
       <h1 className="text-5xl mb-10 font-lobster text-center font-serif ">
         SimplyPost
       </h1>
-      <form className="w-full flex justify-center flex-col">
+      <form
+        onSubmit={(e) => e.preventDefault()}
+        className="w-full flex justify-center flex-col"
+      >
         <input
-          required
           className="w-full mt-2 p-2 placeholder:text-sm border rounded-md 
               focus:outline-none focus:border-sky-500"
           type="email"
           placeholder="Email*"
         />
         <input
-          required
           className="w-full mt-2 p-2 placeholder:text-sm border rounded-md 
               focus:outline-none focus:border-sky-500"
           type="password"
@@ -35,7 +37,7 @@ export const LoginPage = () => {
         </button>
         <div className="flex items-start">
           <div className="w-3/6 border-t mx-1 self-center border-gray-300"></div>
-          <span className="px-2 text-gray-400 font-semibold text-center">
+          <span className="px-2 my-2 text-gray-400 font-semibold text-center">
             OR
           </span>
           <div className="w-3/6 border-t mx-1 self-center border-gray-300"></div>
@@ -49,9 +51,9 @@ export const LoginPage = () => {
       </a>
       <p className="text-center">
         Don't have an account?
-        <a className="ml-1 text-sky-500" href="#">
+        <Link to="/signup" className="ml-1 text-sky-500">
           Sign Up
-        </a>
+        </Link>
       </p>
     </div>
   );
