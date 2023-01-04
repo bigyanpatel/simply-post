@@ -8,7 +8,7 @@ export const SignupPage = () => {
       sm:w-80 sm:mx-auto md:w-80 xl:w-80 md:mx-auto"
     >
       <h1 className="text-5xl mb-5 font-lobster text-center font-serif ">
-        SimpolyPost
+        SimplyPost
       </h1>
       <p className="text-center text-gray-500 font-bold">
         Sign up to see photos and videos from your friends.
@@ -47,12 +47,14 @@ export const SignupPage = () => {
           type="password"
           placeholder="Confirm password*"
         />
-        <button
-          className="px-4 py-1 border-none bg-sky-500 text-white hover:bg-sky-600 
+        <Link to="/posts">
+          <button
+            className="px-4 py-1 w-full border-none bg-sky-500 text-white hover:bg-sky-600 
               font-semibold border rounded mt-3"
-        >
-          Sign up
-        </button>
+          >
+            Sign up
+          </button>
+        </Link>
         <div className="flex items-start">
           <div className="w-3/6 border-t mx-1 self-center border-gray-300"></div>
           <span className="px-2 my-2 text-gray-400 font-semibold text-center">
