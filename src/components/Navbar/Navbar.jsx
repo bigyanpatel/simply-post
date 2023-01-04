@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Featurelist } from "./Featurelist";
 
 export const Navbar = () => {
@@ -6,7 +7,7 @@ export const Navbar = () => {
     <nav className="p-3 top-0 sticky z-10 shadow-md shadow-sky-100 bg-white">
       <div className="flex justify-evenly items-center">
         <h1 className="text-3xl font-lobster text-sky-500 cursor-pointer">
-          Spotter
+          SimplyPost
         </h1>
         <input
           className="p-1 max-w-xs mx-2 w-full border rounded bg-gray-100 
@@ -18,12 +19,14 @@ export const Navbar = () => {
           <div className="features hidden text-2xl  lg:flex">
             <Featurelist />
           </div>
-          <div className="w-8 h-8 cursor-pointer">
-            <img
-              className="w-full h-full object-cover rounded-full "
-              src="https://treatiseui.netlify.app/Images/ian-dooley-lg.jpg"
-            />
-          </div>
+          <Link to="/profile">
+            <div className="w-8 h-8 cursor-pointer">
+              <img
+                className="w-full h-full object-cover rounded-full "
+                src="https://treatiseui.netlify.app/Images/ian-dooley-lg.jpg"
+              />
+            </div>
+          </Link>
         </div>
         <div
           className="features flex p-2 justify-between w-full border 
