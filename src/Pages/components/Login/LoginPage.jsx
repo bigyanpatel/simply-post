@@ -4,7 +4,7 @@ export const LoginPage = () => {
   return (
     <div className="w-full p-3 border rounded-sm flex flex-col  md:w-80 xl:w-80">
       <h1 className="text-5xl mb-10 font-lobster text-center font-serif ">
-        Spotter
+        SimplyPost
       </h1>
       <form className="w-full flex justify-center flex-col">
         <input
@@ -22,8 +22,14 @@ export const LoginPage = () => {
           placeholder="Password*"
         />
         <button
+          className="px-4 py-1 outlise-2 outline-2 text-sky-500 hover:bg-sky-600 
+          hover:text-white font-semibold border rounded mt-5"
+        >
+          Log in as a Guest
+        </button>
+        <button
           className="px-4 py-1 border-none bg-sky-500 text-white hover:bg-sky-600 
-              font-semibold border rounded my-3"
+              font-semibold border rounded mt-3"
         >
           Log In
         </button>
