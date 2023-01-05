@@ -20,6 +20,7 @@ export const LoginForm = () => {
       <h1 className="text-5xl mb-10 font-lobster text-center font-serif ">
         SimplyPost
       </h1>
+      <p className="font-thin text-center">SimplyPost is a social media platform to share book related thoughts.</p>
       <form
         onSubmit={(e) => {
           e.preventDefault();
