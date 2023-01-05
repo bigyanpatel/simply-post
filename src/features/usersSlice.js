@@ -47,6 +47,7 @@ export const followUser = createAsyncThunk(
     try {
       const res = await followService(userId, token);
       if (res.status === 200) return res.data;
+      console.log(res)
     } catch (error) {
       return rejectWithValue({ message: "User already following" });
     }
