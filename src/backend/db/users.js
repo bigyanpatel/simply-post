@@ -14,7 +14,7 @@ export const users = [
     username: "adarshbalika",
     password: "adarshBalika123",
     website: "https://google.com/",
-    bio: "neogcamp student",
+    bio: "Frontend Developer",
     profileImg:
       "https://i.pinimg.com/736x/ef/b4/56/efb4563befb0ae1bed74f004785f3f0f.jpg",
     createdAt: formatDate(),
@@ -59,7 +59,7 @@ export const users = [
         username: "adarshbalika",
         password: "adarshBalika123",
         website: "https://google.com/",
-        bio: "neogcamp student",
+        bio: "Frontend Developer",
         profileImg:
           "https://i.pinimg.com/736x/ef/b4/56/efb4563befb0ae1bed74f004785f3f0f.jpg",
         createdAt: formatDate(),
