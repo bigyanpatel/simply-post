@@ -131,7 +131,7 @@ export const Profile = () => {
                 </div>
                 <div className="mt-4 flex justify-between flex-wrap">
                   <p className="text-gray-500 select-none">
-                    <span>4</span> posts
+                    <span>{currentUserPosts?.length}</span> posts
                   </p>
                   <button
                     onClick={() => setIsFollowersList(true)}
