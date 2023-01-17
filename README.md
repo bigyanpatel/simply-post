@@ -107,7 +107,7 @@ SimplyPost is a social media plateform to connect the users.
 <a name="introduction"/>
 
 #### Introduction
-* Hey developers, I'm Bigyan, passionate frontend developer. Check out my [Portfolio](https://bigyanpatel.netlify.app/)
+* Hey developers, I'm Bigyan, passionate frontend developer. Check out my [Portfolio](https://bigyanpatel.vercel.app/)
 
 <a name="social-media"/>
 
