@@ -28,7 +28,7 @@ export const posts = [
             likedBy: [],
             dislikedBy: [],
           },
-          username: "M_D_123",
+          username: "S_D_123",
           comments: [
             {
               _id: uuid(),
@@ -49,7 +49,7 @@ export const posts = [
       ],
       dislikedBy: [],
     },
-    username: "M_D_123",
+    username: "S_D_123",
     comments: [],
     createdAt: "07:46 PM june 26,2019",
     updatedAt: formatDate(),
@@ -75,7 +75,7 @@ export const posts = [
             likedBy: [],
             dislikedBy: [],
           },
-          username: "Nikhil_23_nb",
+          username: "anand_23_nb",
           comments: [
             {
               _id: uuid(),
@@ -150,7 +150,7 @@ export const posts = [
             likedBy: [],
             dislikedBy: [],
           },
-          username: "Himadri_892",
+          username: "ritika_892",
           comments: [
             {
               _id: uuid(),
@@ -209,12 +209,12 @@ export const posts = [
       likedBy: [],
       dislikedBy: [],
     },
-    username: "Himadri_892",
+    username: "ritika_892",
     comments: [
       {
         _id: uuid(),
         content: "wow, what a beautiful thought",
-        username: "Nikhil_23_nb",
+        username: "anand_23_nb",
         createdAt: formatDate(),
       },
     ],
