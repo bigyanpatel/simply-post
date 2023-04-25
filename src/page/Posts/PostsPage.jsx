@@ -5,6 +5,7 @@ import { HiOutlineAdjustments } from "react-icons/hi";
 import { getAllUsers } from "../../features/usersSlice";
 import { getAllPosts } from "../../features/postSlice";
 import { sortPosts } from "../../backend/utils/SortPosts";
+import { Helmet } from "react-helmet";
 
 export const PostsPage = () => {
   const dispatch = useDispatch();
@@ -52,6 +53,11 @@ export const PostsPage = () => {
 
   return (
     <div className="px-2 relative flex justify-center items-start min-h-screen">
+      <Helmet>
+        <title>Posts - SimplyPost</title>
+        <meta name="description" content="A simple social media app to share your thoughts on books." />
+        {/* Add more meta tags as needed */}
+      </Helmet>
       {resultPosts.length > 0 ? (
         <div className="flex flex-col items-end lg:w-2/3 ">
           <div className="w-full max-w-xl mt-3 flex justify-between items-center">
